@@ -114,8 +114,8 @@ public class GaugeChart01View  extends GraphicalView {
 			//设置当前指向角度(0-180).
 			//chart.setCurrentAngle(90f);
 			chart.setCurrentAngle(mAngle);
-			//绘制边框
-			chart.showRoundBorder();
+//			//绘制边框
+//			chart.showRoundBorder();
 		
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
@@ -128,18 +128,18 @@ public class GaugeChart01View  extends GraphicalView {
 	private void chartDataSet()
 	{
 		int Angle = 180/3;
-		mPartitionSet.add(new Pair<Float,Integer>((float)Angle, Color.rgb(73, 172, 72)));
-		mPartitionSet.add(new Pair<Float,Integer>((float)Angle, Color.rgb(247, 156, 27)));
 		mPartitionSet.add(new Pair<Float,Integer>((float)Angle, Color.rgb(224, 62, 54)));
+		mPartitionSet.add(new Pair<Float,Integer>((float)Angle,  Color.rgb(224, 62, 54)));
+		mPartitionSet.add(new Pair<Float,Integer>((float)Angle,Color.rgb(73, 172, 72)));
 	}
 	
 	private void chartLabels()
 	{
 		//标签		
 		mLabels.add("起始");
-		mLabels.add("安全");
-		mLabels.add("警惕");
-		mLabels.add("危险");
+		mLabels.add("");
+		mLabels.add("");
+		mLabels.add("");
 		mLabels.add("终止");
 	}
 
